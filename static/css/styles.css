@@ -1,0 +1,37 @@
+.menu {
+  border: 1px solid #ff0;
+  margin: 10px;
+  background: #fff;
+  display: none;
+}
+.menu-checkbox {
+  margin: 2em;
+}
+.menu-checkbox:checked ~ .menu {
+  border: 1px solid #000;
+  display: block;
+}
+.menu-checkbox:checked ~ .menu-open {
+  border: 1px solid #00f;
+}
+.menu-open {
+  border: 1px solid #f00;
+}
+.header {
+  border: 1px solid #00f;
+}
+.hero {
+  border: 1px solid #f00;
+}
+:root {
+  --softBlue: #5368df;
+  --softRed: #fa5757;
+  --grayishBlue: #9194a1;
+  --veryDarkBlue: #252b46;
+}
+body {
+  background: #d3d3d3;
+  font-family: 'Rubik', sans-serif;
+  color: var(--veryDarkBlue);
+  font-size: 18px;
+}

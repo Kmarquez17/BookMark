@@ -1,0 +1,16 @@
+{
+    "name": "Bookmark",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "stylus": "0.54.8"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "dev": "stylus -w ./src/stylus/styles.styl -o ./static/css/styles.css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
