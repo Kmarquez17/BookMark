@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./static/css/styles.css">
 
     <title>Bookmark landing page</title>
@@ -15,18 +14,25 @@
 </head>
 
 <body>
+    <input type="checkbox" name="open" id="open" class="menu-checkbox" checked>
     <header class="header">
-        <img src="./static/images/logo-bookmark.svg" alt="">
-        <input type="checkbox" name="open" id="open" class="menu-checkbox">
-        <label for="open" class="menu-open">Abrir</label>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Feactures</a></li>
-                <li><a href="#">Princing</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
+        <div class="u-wrapper">
+            <div class="header-content">
+                <a href="#" class="header-logo"></a>
+                <label for="open" class="menu-open"></label>
+                <!-- menu position absolute/ relative header -->
+                <nav class="menu">
+                    <div class="u-wrapper">
+                        <ul>
+                            <li><a href="#">Feactures</a></li>
+                            <li><a href="#">Princing</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <section class="hero">

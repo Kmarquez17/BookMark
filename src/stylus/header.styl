@@ -1,3 +1,19 @@
 @import './menu.styl'
 .header
-    border: 1px solid blue
+    background white   
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    padding: 1em 0
+    transition: .3s background
+    &-content
+        display: flex
+        justify-content: space-between
+        align-content: center
+    &-logo
+        display: inline-flex
+        width: 150px
+        height: 40px
+        background: url('../images/logo-bookmark.svg') no-repeat center
+        background-size: contain
