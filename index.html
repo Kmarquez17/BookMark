@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./static/css/styles.css">
 
     <title>Bookmark landing page</title>
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-    <input type="checkbox" name="open" id="open" class="menu-checkbox" checked>
+    <input type="checkbox" name="open" id="open" class="menu-checkbox">
     <header class="header">
         <div class="u-wrapper">
             <div class="header-content">
@@ -36,10 +37,16 @@
     </header>
 
     <section class="hero">
-        <h1>A Simple Bookmark Manager</h1>
-        <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free. </p>
-        <button> Get it on Chrome </button>
-        <button> Get it on Firefox </button>
+        <div class="u-wrapper">
+
+            <img class="hero-image" src="./static/images/illustration-hero.svg" alt=" ">
+            <h1 class="u-h1">A Simple Bookmark Manager</h1>
+            <p class="u-p">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free. </p>
+            <div class="hero-buttons">
+                <button class="u-button"> Get it on Chrome </button>
+                <button class="u-button is-gray"> Get it on Firefox </button>
+            </div>
+        </div>
     </section>
 
 

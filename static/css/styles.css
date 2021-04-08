@@ -60,12 +60,13 @@
 }
 .header {
   background: #fff;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   padding: 1em 0;
   transition: 0.3s background;
+  z-index: 2;
 }
 .header-content {
   display: flex;
@@ -80,7 +81,14 @@
   background-size: contain;
 }
 .hero {
-  border: 1px solid #f00;
+  text-align: center;
+  padding: 4em 0;
+}
+.hero-image {
+  max-width: 100%;
+}
+.hero-buttons {
+  padding-top: 1em;
 }
 :root {
   --softBlue: #5368df;
@@ -99,4 +107,31 @@ body {
   max-width: 1280px;
   margin: auto;
   padding: 0 1em;
+}
+.u-h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+.u-p {
+  color: var(--grayishBlue);
+  line-height: 1.8;
+}
+.u-button {
+  background: var(--softBlue);
+  color: #fff;
+  padding: 1em 1em;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 0.5em;
+  margin-left: 0.5em;
+  border: none;
+  box-shadow: 0 5px 10px -5px var(--softBlue);
+  cursor: pointer;
+}
+.u-button:first-of-type {
+  margin: 0;
+}
+.u-button.is-gray {
+  background: #f7f7f7;
+  color: var(--veryDarkBlue);
 }
